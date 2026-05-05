@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RP – Futuristic Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-XxIc3IVi1rUMTpd1wE9W08QmS5HFTlczekazpvC+ZyF6YTcEo/xXAd4HZ8X2TjSB5bI9llldpJHDZ+p1kHBNqw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Scroll progress bar -->
+    <div id="progress-bar"></div>
+    <!-- Header and Navigation -->
+    <header class="navbar">
+        <div class="logo" tabindex="0">RP</div>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#photos" class="nav-link">Photos</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#memories" class="nav-link">Memories</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switcher" id="theme-switcher">
+            <!-- theme buttons; colors are set on these data attributes -->
+            <button class="theme-btn" data-color="#6c63ff" title="Purple"></button>
+            <button class="theme-btn" data-color="#3b82f6" title="Blue"></button>
+            <button class="theme-btn" data-color="#10b981" title="Green"></button>
+            <button class="theme-btn" data-color="#ec4899" title="Pink"></button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay">
+            <h1 data-aos="fade-up">Hello, I'm <span class="accent">RP</span></h1>
+            <p class="tagline" data-aos="fade-up" data-aos-delay="100">
+                A 17‑year‑old dreamer and creator
+            </p>
+            <p class="subtext" data-aos="fade-up" data-aos-delay="200">
+                Hosūr, Tamil Nadu, India
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#about" class="btn primary">Learn More</a>
+                <a href="#resume" class="btn outline">Resume</a>
+            </div>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="birthday-widget" data-aos="fade-up" data-aos-delay="500">
+                <div class="age-badge">
+                    <span id="age-value">17</span>
+                    <span class="age-label">Years Old</span>
+                </div>
+                <div class="countdown">
+                    <h4>Birthday Countdown</h4>
+                    <div id="countdown-timer">
+                        <span id="cd-days">--</span><span class="cd-label">Days</span>
+                        <span id="cd-hours">--</span><span class="cd-label">Hrs</span>
+                        <span id="cd-mins">--</span><span class="cd-label">Min</span>
+                        <span id="cd-secs">--</span><span class="cd-label">Sec</span>
+                    </div>
+                    <p class="birthday-date">Born on 6 August 2008</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text" data-aos="fade-right">
+                <p>
+                    I'm RP, a 17‑year‑old creative individual who loves exploring
+                    the intersection of technology, art, and innovation. I enjoy
+                    turning ideas into reality—whether it's through code,
+                    design, or storytelling. Based in Hosūr, I draw
+                    inspiration from both futuristic visions and everyday
+                    moments.
+                </p>
+            </div>
+            <div class="about-cards" data-aos="fade-left">
+                <div class="about-card" data-tilt>
+                    <i class="fas fa-brain"></i>
+                    <h3>Creative Mind</h3>
+                    <p>I love design, editing and making ideas look beautiful.</p>
+                </div>
+                <div class="about-card" data-tilt>
+                    <i class="fas fa-code"></i>
+                    <h3>Tech Enthusiast</h3>
+                    <p>Always exploring new technologies and building skills.</p>
+                </div>
+                <div class="about-card" data-tilt>
+                    <i class="fas fa-heart"></i>
+                    <h3>Dream Big</h3>
+                    <p>I believe in dreams, hard work and consistency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Photos Section -->
+    <section id="photos" class="section gallery-section">
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-subtitle">Hover on images to see the magic ✨</p>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-index="1" data-aos="zoom-in">
+                <img src="images/photo1.png" alt="Photo 1" />
+            </div>
+            <div class="gallery-item" data-index="2" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/photo2.png" alt="Photo 2" />
+            </div>
+            <div class="gallery-item" data-index="3" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/photo3.png" alt="Photo 3" />
+            </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <img src="" alt="Expanded photo" id="lightbox-img" />
+        </div>
+    </section>
+    <!-- Videos Section -->
+    <section id="videos" class="section video-section">
+        <h2 class="section-title">Video Gallery</h2>
+        <p class="section-subtitle">Stylish videos coming soon</p>
+        <div class="video-grid">
+            <div class="video-card" data-aos="zoom-in">
+                <div class="video-thumb" style="background-image: url('images/photo1.png');">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h4>Cinematic Journey</h4>
+                <span class="duration">00:45</span>
+            </div>
+            <div class="video-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="video-thumb" style="background-image: url('images/photo2.png');">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h4>Neon Nights</h4>
+                <span class="duration">01:02</span>
+            </div>
+            <div class="video-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="video-thumb" style="background-image: url('images/photo3.png');">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h4>Dream Big</h4>
+                <span class="duration">00:58</span>
+            </div>
+        </div>
+    </section>
+    <!-- Hobbies Section -->
+    <section class="section hobbies" id="hobbies">
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-item" data-aos="zoom-in" data-tilt>
+                <i class="fas fa-code"></i>
+                <span>Coding</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="50">
+                <i class="fas fa-pencil-ruler"></i>
+                <span>Design</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="100">
+                <i class="fas fa-camera-retro"></i>
+                <span>Photography</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="150">
+                <i class="fas fa-gamepad"></i>
+                <span>Gaming</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="200">
+                <i class="fas fa-music"></i>
+                <span>Music</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="250">
+                <i class="fas fa-heart"></i>
+                <span>Anime</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="300">
+                <i class="fas fa-plane"></i>
+                <span>Travel</span>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in" data-tilt data-aos-delay="350">
+                <i class="fas fa-book-open"></i>
+                <span>Reading</span>
+            </div>
+        </div>
+    </section>
+    <!-- Memories Section -->
+    <section id="memories" class="section timeline">
+        <h2 class="section-title">Memories Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-content">
+                    <span class="timeline-year">2008</span>
+                    <h4>The Beginning</h4>
+                    <p>Born on 6 August in Hosūr; a new journey begins.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-content">
+                    <span class="timeline-year">2015</span>
+                    <h4>First Steps</h4>
+                    <p>Discovered tech and started exploring creativity.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-content">
+                    <span class="timeline-year">2019</span>
+                    <h4>New Journey</h4>
+                    <p>Embarked on a new educational adventure and made friends.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-content">
+                    <span class="timeline-year">2022</span>
+                    <h4>Exploring</h4>
+                    <p>Found new passions and honed my craft.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-content">
+                    <span class="timeline-year">2024</span>
+                    <h4>Building Dreams</h4>
+                    <p>Creating a future through dedication and creativity.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="timeline-content">
+                    <span class="timeline-year">Future</span>
+                    <h4>To Be Continued</h4>
+                    <p>The best is yet to come — infinite possibilities ahead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-text">
+            I'm always open to new opportunities and collaborations. Feel free to reach
+            out!
+        </p>
+        <div class="contact-grid">
+            <a href="mailto:yourmail@example.com" class="contact-item" data-aos="zoom-in">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="#" class="contact-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="#" class="contact-item" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="#" class="contact-item" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="#" class="contact-item" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Made with <span class="heart">♥</span> by RP</p>
+        <button id="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+    <!-- External JS libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-pJ1KDP5IkM2NH77Gqk9XN0PJogiF7MXvKWa0PlOYWZmaXfktPyqUiXe4FDw3Oj0SBywscHZTwyXl4bssF3jw0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css" integrity="sha512-HoEB+2K4X0kSN1wUYE3wpCk2YKJ4+ps69gdv7b7+bE4hfDZsU7VNoc3u7jlv9BcmRbYKvhwkr5rY5PiqIFnFBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" integrity="sha512-0V/3f4pmv7ThfRknZHC2EVLfi3v/IXwJoXbZexAs1Nn2THD3pEB9kpmgZv2txo27Oc5X2zNneFCHpPlRfPzG1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
